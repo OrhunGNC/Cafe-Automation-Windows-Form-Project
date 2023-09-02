@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2B8C285-9BBC-45D2-A907-AA4AEC0D81C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cafe</RootNamespace>
+    <AssemblyName>Cafe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriArayuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriArayuz.Designer.cs">
+      <DependentUpon>MusteriArayuz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGirisEkrani.Designer.cs">
+      <DependentUpon>MusteriGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriKayit.Designer.cs">
+      <DependentUpon>MusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siparis Ver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis Ver.Designer.cs">
+      <DependentUpon>Siparis Ver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urunler.Designer.cs">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiArayuz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiArayuz.Designer.cs">
+      <DependentUpon>YoneticiArayuz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiKayit.Designer.cs">
+      <DependentUpon>YoneticiKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yoneticiler.Designer.cs">
+      <DependentUpon>Yoneticiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiMenu.Designer.cs">
+      <DependentUpon>YoneticiMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiSiparis.Designer.cs">
+      <DependentUpon>YoneticiSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YöneticiGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YöneticiGirisEkrani.Designer.cs">
+      <DependentUpon>YöneticiGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriArayuz.resx">
+      <DependentUpon>MusteriArayuz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGirisEkrani.resx">
+      <DependentUpon>MusteriGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriKayit.resx">
+      <DependentUpon>MusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Siparis Ver.resx">
+      <DependentUpon>Siparis Ver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunler.resx">
+      <DependentUpon>Urunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiArayuz.resx">
+      <DependentUpon>YoneticiArayuz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiKayit.resx">
+      <DependentUpon>YoneticiKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yoneticiler.resx">
+      <DependentUpon>Yoneticiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiMenu.resx">
+      <DependentUpon>YoneticiMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiSiparis.resx">
+      <DependentUpon>YoneticiSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YöneticiGirisEkrani.resx">
+      <DependentUpon>YöneticiGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
